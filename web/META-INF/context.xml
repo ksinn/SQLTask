@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/SQLTask">
+    <!-- <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="20" maxAge="10000" name="jdbc/entetyDB" password="qwerty" removeAbandoned="true" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/sql_task?useUnicode=true&amp;characterEncoding=UTF-8" username="root"/>
+    -->
+    <Resource name="jdbc/entetyDB" auth="Container"
+                  type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+                  url="jdbc:postgresql://localhost:5432/sql_task?serverTimezone=UTC"
+                  username="sql_task_user" password="qwerty" maxActive="20" maxIdle="10" maxWait="-1"/>
+    
+    <Resource name="jdbc/postgre" auth="Container"
+              type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+              url="jdbc:postgresql://localhost:5432/task_data?serverTimezone=UTC"
+              username="student" password="qwerty" maxActive="20" maxIdle="10" maxWait="-1"/>
+
+  
+    <Environment name="cntxt/listFactory" override="false" type="java.lang.String" value="My.SQLListFactory"/>
+    <Environment name="cntxt/taskFactory" override="false" type="java.lang.String" value="My.SQLTaskFactory"/>
+    <Environment name="cntxt/checker" override="false" type="java.lang.String" value="My.SQLChecker"/>
+    <Environment name="cntxt/examTasksGenerator" override="false" type="java.lang.String" value="TasKer.Exam.Impl.CleverExamTasksGenerator"/>
+    <Environment name="cntxt/answerFactory" override="false" type="java.lang.String" value="My.SQLAnswerFactory"/>
+    <Environment name="cntxt/serverName" override="false" type="java.lang.String" value="sqlTask"/>
+  
+  
+    <Environment name="cntxt/attemptSaveMod" override="false" type="java.lang.Boolean" value="true"/>
+  
+  
+</Context>

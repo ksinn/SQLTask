@@ -1,0 +1,93 @@
+.footer {
+    background-color: #eee;
+}
+
+.footer a {
+    text-decoration: none;
+}
+.footer .copyright {
+
+}
+
+.main-login {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-login:hover {
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login {
+    color: #00BCD3;
+    text-decoration: none;
+}
+
+.login:hover {
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.logo {
+    height: 75px;
+    width: 100px;
+    background: url(../img/logo-sm.png) no-repeat;
+    background-position: bottom;
+}
+.logo:hover{
+    background-position: top;
+}
+
+.space-top {
+    padding-top: 22px;
+}
+.space-both {
+    padding: 15px 0;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.green {
+    
+    background: url(../img/test_bg.png) repeat-x bottom;
+    min-height: 60vh;
+    padding-bottom: 130px;
+}
+
+a.green-link{
+    text-decoration: none;
+    color: #333;
+    padding-right: 10px;
+}
+
+a.green-link:hover {
+    color: #83C650;
+}
+
+a.green-edit{
+    text-decoration: none;
+    color: #7b7b7b;
+    padding-right: 10px;
+}
+
+a.green-edit:hover {
+    color: #83C650;
+}
+
+.font-green {
+    color: #83C650;
+}
+
+.font-blue {
+    color: #255bbd;
+}
+
+.logo-round {
+    border-radius: 50%;
+}
+
